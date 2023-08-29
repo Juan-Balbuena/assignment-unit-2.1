@@ -72,8 +72,13 @@ console.log(result);
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
 let diceRoll = 'Try again later.'
-console.log( 'luckyNumber);
-if( diceRoll)
+
+if (luckyNumber === 2 && adventurous) {
+  diceRoll = "Roll the dice!";
+}
+
+console.log(diceRoll);
+
 
 
 
@@ -85,7 +90,16 @@ if( diceRoll)
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = 'I can have more pets'
+let petStatus;
+
+if (pets < allowedPets) {
+  petStatus = "I can have more pets";
+} else if (pets === allowedPets) {
+   petStatus = "I have enough pets";
+} else { 
+  petStatus = "Oh no, I have too many pets";
+}
+
 
 // STRETCH GOALS:
 
